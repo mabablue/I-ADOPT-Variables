@@ -17,6 +17,7 @@ ex:State-of-tube
          "condition, pipe connection; plastic, diametre of 30 cm" ; 
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP60.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iop:mapping <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/mapping/MR2.yaml>
     iop:hasObjectOfInterest 
         ex:ConnectingPipe ;
     iop:hasProperty 
