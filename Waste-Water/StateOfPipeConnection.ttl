@@ -21,28 +21,26 @@ ex:State-of-tube
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP62.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP64.yaml> ;
     iop:mapping <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/mapping/MR2.yaml> ;
-
     iop:hasObjectOfInterest 
-        ex:ConnectingPipe ;
+        ex:PipeConnection ;
     iop:hasProperty 
         ex:StateOfPipeConnection ;
     iop:hasConstraint 
         [ a iop:Constraint, <https://www.wikidata.org/wiki/Q11474> ;
              rdfs:label "material type: plastic" ;
-             iop:constrains ex:ConnectingPipe ;
+             iop:constrains ex:PipeConnection ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "size:diameter of 30 cm" ;
-             iop:constrains ex:ConnectingPipe ;
+             iop:constrains ex:PipeConnection ;
         ] .
 
 ex:PipeConnection
-    a 
-        iop:Entity ;
+    a iop:Entity ;
     rdfs:label 
         "pipe connection" .
 
-<https://www.wikidata.org/wiki/Q813912>
+ex:StateOfPipeConnection
     a 
         iop:Property ;
     rdfs:label 
