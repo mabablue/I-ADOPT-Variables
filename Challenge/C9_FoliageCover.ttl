@@ -15,6 +15,7 @@ ex:C9
     rdfs:comment "foliage, lower canopy strata, ground, area fraction";
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP15.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP69.yaml> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q18250160> ;
     iop:hasMatrix 
@@ -23,7 +24,7 @@ ex:C9
         <http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "lower canopy strata" ;
+             rdfs:label "layer: lower canopy strata" ;
              iop:constrains <https://www.wikidata.org/wiki/Q18250160> ;
         ] .
 
