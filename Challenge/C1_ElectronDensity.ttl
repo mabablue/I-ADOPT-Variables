@@ -1,7 +1,3 @@
-I-ADOPT Visualizer
-RDF
-URL
-SPARQL Endpoint
 @prefix ex: <http://example.org/iadopt/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -28,16 +24,3 @@ ex:C1 a iop:Variable ;
 
 <https://www.wikidata.org/wiki/Q108914962> a iop:Property ;
    rdfs:label "number density" .
-hasObjectOfInterest
-hasMatrix
-hasProperty
-Variable
-Electron density in the solar wind
-ex:C1
-Density (particle per cm3) of electrons measured in the Solar Wind.
-Entity
-electron
-Entity
-solar wind
-Property
-number density
