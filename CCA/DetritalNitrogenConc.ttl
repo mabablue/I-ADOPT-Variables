@@ -5,7 +5,7 @@
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
-<http://example.org/F2A/CS2> .>
+<http://example.org/F2A/CS2>
     a 
         iop:Variable ;
     rdfs:label 
