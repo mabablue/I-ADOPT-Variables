@@ -3,6 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/HFR> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:Variable
     a 
@@ -10,9 +11,10 @@ ex:Variable
     rdfs:label 
         "VART_QC Variance quality flag" ;
     skos:definition 
-        """QC flags labelling surface velocity vectors whose temporal variance is smaller than a maximum variance threshold with a “good data” flag. Otherwise, the vectors are labelled with a “bad data” flag. This test is applicable only to Beam Forming (BF) systems. Data files from Direction Finding (DF) systems will apply instead the “Temporal Derivative” test""" ;
+        """QC flags for radial velocity variance of water current, good data flag for those whose temporal variance is smaller than a maximum variance threshold.""" ;
     rdfs:comment "HCSS Radial velocity variance of water current, quality flag, good if under threshold value" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP22.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP82.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP90.yaml> ;
     iop:hasObjectOfInterest 
@@ -21,7 +23,7 @@ ex:Variable
         ex:Prop ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "good if under threshold value" ;
+             rdfs:label "threshold: good if temporal variance is smaller than a maximum variance threshold" ;
              iop:constrains ex:Prop ;
         ] .
 
