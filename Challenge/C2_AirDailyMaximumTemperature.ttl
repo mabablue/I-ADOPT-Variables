@@ -21,6 +21,7 @@ VDP10 for property;  VDP40 for context object; VDP66 for constraint:datum; VDP67
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP66.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/8> 
     iopp:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q7391292> ;
     iop:hasContextObject 
