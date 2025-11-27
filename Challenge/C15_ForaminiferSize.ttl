@@ -15,8 +15,9 @@ ex:C15
         """Size of planktic foraminifers in surface sediments, see https://doi.pangaea.de/10.1594/PANGAEA.126730""" ;
     rdfs:comment "foraminifera, sediment, size, planctonic -> type: planktonic, surface -> location: surface" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/21> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q107027> ;
     iop:hasMatrix 
