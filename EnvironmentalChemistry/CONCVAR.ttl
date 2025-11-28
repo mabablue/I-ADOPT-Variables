@@ -17,10 +17,8 @@ ex:concvar
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP79.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP85.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP86.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP87.yaml> ;
     ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/80> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q677> ;
@@ -39,14 +37,6 @@ ex:concvar
         ] ,
         [ a iop:Constraint ;
              rdfs:label "reagent: o-phenanthroline" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q36133> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "phase: acqueous" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q677> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "origin: soil sample" ;
              iop:constrains <https://www.wikidata.org/wiki/Q36133> ;
         ] .
 
@@ -67,4 +57,3 @@ ex:concvar
         iop:Property ;
     rdfs:label 
         "molar concentration" .
-
