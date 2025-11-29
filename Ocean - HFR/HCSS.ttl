@@ -41,7 +41,7 @@ ex:someVar
              iop:constrains <https://www.wikidata.org/wiki/Q15324> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "temporal extent: over the temporal coverage period" ;
+             rdfs:label "aggregation: over the temporal coverage period" ;
              iop:constrains <https://www.wikidata.org/wiki/Q175199> ;
         ] ,
         [ a iop:Constraint ;
