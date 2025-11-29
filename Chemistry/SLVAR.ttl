@@ -10,8 +10,10 @@ ex:slvar
         iop:Variable ;
     rdfs:label 
         "solubility of naphthalene in water at room temperature" ;
-    rdfs:comment 
+    skos:definition 
         """solubility measurement of napathalene in deionized water at room temperature by monitoring absorption at 279 nm""" ;
+    rdfs:comment 
+        """solubility; napathalene; deionized water; at room temperature; at 279 nm; """ ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q179724> ;
     iop:hasMatrix 
