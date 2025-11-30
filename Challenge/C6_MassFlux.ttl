@@ -54,7 +54,7 @@ _:b1
         iop:Entity ,
         iop:AsymmetricSystem ;
     rdfs:label 
-        "flow from vegetation to soil" ;
+        "flow" ;
     iop:hasSource 
         <http://vocabs.lter-europe.net/EnvThes/20535> ;
     iop:hasTarget 
