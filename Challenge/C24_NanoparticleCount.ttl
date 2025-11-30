@@ -15,7 +15,7 @@ ex:C24
     rdfs:label 
         "dose of applied nanomaterial internalised by a specific cell population (or per single cell) - particle number / cell area" ;
     skos:definition 
-        """the amount of the applied dose of nanomaterial that has been internalised by a cell population (or per specific cell)""" ;
+        """the amount of the applied dose of nanomaterial - particle number per cell area - that has been internalised by a cell population (or per specific cell)""" ;
     rdfs:comment
         """nanomaterial; cell membrane; number; location: intracellular; normalization: per area; ADD: particle number per cell area""" ;
     iop:pattern 
@@ -30,6 +30,8 @@ ex:C24
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/30" ;
     iop:hasObjectOfInterest 
         _:b0 ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q20088819> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q11563> ;
     iop:hasConstraint 
@@ -38,7 +40,7 @@ ex:C24
              iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "normalization: per area" ;
+             rdfs:label "ratio: number per area" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11563> ;
         ] .
 
@@ -47,11 +49,17 @@ _:b0
         iop:Entity ,
         iop:AsymmetricSystem ;
     rdfs:label 
-        "number/area" ;
+        "ratio" ;
     iop:hasNumerator 
         <https://www.wikidata.org/wiki/Q967847> ;
     iop:hasDenominator 
         <https://www.wikidata.org/wiki/Q54888819> .
+
+<https://www.wikidata.org/wiki/Q20088819>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "group of cells" .
 
 <https://www.wikidata.org/wiki/Q11563>
     a 
