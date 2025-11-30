@@ -18,9 +18,11 @@ ex:C27
     rdfs:comment
         """Mass concentration; isobutylene; chloroform; ADD: per unit mass""" ;  
     iop:pattern
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
+    iop:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
     iop:pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP25.yaml> ;
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP26.yaml> ;
     iop:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
     ex:issue
@@ -28,11 +30,11 @@ ex:C27
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q11423> ;
+        <https://www.wikidata.org/wiki/Q589446> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "normalization: per unit volume" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q11423> ;
+             rdfs:label "ratio: mass per volume" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q589446> ;
         ] .
 
 _:b0
@@ -40,17 +42,17 @@ _:b0
         iop:Entity ,
         iop:AsymmetricSystem ;
     rdfs:label 
-        "substance/solution" ;
+        "ratio" ;
     iop:hasNumerator 
         <https://www.wikidata.org/wiki/Q776976> ;
     iop:hasDenominator 
         <https://www.wikidata.org/wiki/Q172275> .
 
-<https://www.wikidata.org/wiki/Q11423>
+<https://www.wikidata.org/wiki/Q589446>
     a 
         iop:Property ;
     rdfs:label 
-        "mass" .
+        "mass concentration" .
 
 <https://www.wikidata.org/wiki/Q776976>
     a 
