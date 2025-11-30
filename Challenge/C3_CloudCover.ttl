@@ -21,7 +21,7 @@ ex:C3
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        _:b1 .
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction> .
 
 _:b0
     a 
@@ -34,7 +34,7 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/wiki/Q527> .
 
-_:b1
+<http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction>
     a 
         iop:Property ;
     rdfs:label 
