@@ -21,6 +21,10 @@ ex:C23
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
     iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP14.yaml> ;
+    iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP26.yaml> ;
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
@@ -31,15 +35,15 @@ ex:C23
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q11423> ;
+        <https://www.wikidata.org/wiki/Q1907514> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: intracellular" ;
              iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "normalization: per area" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q11423> ;
+             rdfs:label "ratio: mass per area" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q1907514> ;
         ] .
 
 _:b0
@@ -47,26 +51,26 @@ _:b0
         iop:Entity ,
         iop:AsymmetricSystem ;
     rdfs:label 
-        "mass/area" ;
+        "ratio" ;
     iop:hasNumerator 
         <https://www.wikidata.org/wiki/Q967847> ;
     iop:hasDenominator 
         <https://www.wikidata.org/wiki/Q54888819> .
 
-<https://www.wikidata.org/wiki/Q54888819>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "cell membrane" .
-
-<https://www.wikidata.org/wiki/Q11423>
+<https://www.wikidata.org/wiki/Q1907514>
     a 
         iop:Property ;
     rdfs:label 
-        "mass" .
+        "surface density" .
 
 <https://www.wikidata.org/wiki/Q967847>
     a 
         iop:Entity ;
     rdfs:label 
         "nanomaterial" .
+
+<https://www.wikidata.org/wiki/Q54888819>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "cell membrane" .
