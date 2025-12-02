@@ -13,7 +13,7 @@ ex:C19
         "Weight specific-ingestion Carbon rate at 15 °C" ;
     skos:definition 
         """Weight specific-ingestion Carbon rate at 15 °C. The amount of carbon consumed by an organism at non-limiting concentration of food relative to the individual dry weight measured at 15°C. It is expressed as μg C mg DW−1 h−1""" ;
-    rdfs:comment "Carbon, at non-limiting conditions -> condition: under non-limiting food conditions, food, organism, dry; mass flow rate; at 15°C temperature; ingestion ADD: ratio: mass per time" ;
+    rdfs:comment "Carbon, at non-limiting conditions -> condition: under non-limiting food conditions, food, organism, dry; mass flow rate; at 15°C temperature; ingestion" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/25" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q623> ;
