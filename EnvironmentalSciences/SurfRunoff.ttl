@@ -4,50 +4,60 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 
-<http://example.org/iadopt/env/SurfRunoff>
+<http://example.org/Env/SurfRunoff>
     a 
         iop:Variable ;
     rdfs:label 
         "Surface runoff" ;
     rdfs:comment 
-        """Surface Runoff measured in kg m-2 s-1""" ;
+        """Surface runoff measured in kg m⁻² s⁻¹""" ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/wiki/Q283> ;
+    iop:hasMatrix 
+        ex:Matrix ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q3265048> ;
+        <https://www.wikidata.org/wiki/Q3295893> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: moving on the surface" ;
-             iop:constrains _:b1 ;
+             rdfs:label "condition: not soaking into the ground" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q484298> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "origin: rain" ;
-             iop:constrains _:b1 ;
+             iop:constrains <https://www.wikidata.org/wiki/Q283> ;
         ] .
 
-_:b0
-    a 
-        iop:Entity ,
-        iop:AsymmetricSystem ;
-    iop:hasNumerator 
-        _:b1 ;
-    iop:hasDenominator 
-        _:b2 .
-
-<https://www.wikidata.org/wiki/Q3265048>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "mass flow" .
-
-_:b1
+<https://www.wikidata.org/wiki/Q283>
     a 
         iop:Entity ;
     rdfs:label 
         "water" .
 
-_:b2
+ex:Matrix
+    a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    rdfs:label 
+        "flow" ;
+    iop:hasSource 
+        <https://www.wikidata.org/wiki/Q8104> ;
+    iop:hasTarget 
+        <https://www.wikidata.org/wiki/Q484298> .
+
+<https://www.wikidata.org/wiki/Q3295893>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "mass flow" .
+
+<https://www.wikidata.org/wiki/Q8104>
     a 
         iop:Entity ;
     rdfs:label 
-        "ground" .
+        "atmosphere" .
+
+<https://www.wikidata.org/wiki/Q484298>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "surface" .
