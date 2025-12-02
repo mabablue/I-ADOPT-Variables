@@ -14,22 +14,19 @@ ex:C17
     skos:definition 
         """The amount of docosahexaenoic acid relative to dry weight in an organism.""" ;
     rdfs:comment "docosahexaenoic acid, organism, mass fraction, dry -> state: dry, ADD: ratio: mass per mass" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP21.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP26.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/23" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q66055> ;
+        <https://www.wikidata.org/entity/Q66055> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "ratio: mass per mass" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q66055> ;
+             iop:constrains <https://www.wikidata.org/entity/Q66055> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: dry" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q7239> ;
+             iop:constrains <https://www.wikidata.org/entity/Q7239> ;
         ] .
 
 _:b0
@@ -39,23 +36,23 @@ _:b0
     rdfs:label 
         "ratio" ;
     iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q423345> ;
+        <https://www.wikidata.org/entity/Q423345> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q7239> .
+        <https://www.wikidata.org/entity/Q7239> .
 
-<https://www.wikidata.org/wiki/Q66055>
+<https://www.wikidata.org/entity/Q66055>
     a 
         iop:Property ;
     rdfs:label 
         "mass fraction" .
 
-<https://www.wikidata.org/wiki/Q423345>
+<https://www.wikidata.org/entity/Q423345>
     a 
         iop:Entity ;
     rdfs:label 
         "docosahexaenoic acid" .
 
-<https://www.wikidata.org/wiki/Q7239>
+<https://www.wikidata.org/entity/Q7239>
     a 
         iop:Entity ;
     rdfs:label 
