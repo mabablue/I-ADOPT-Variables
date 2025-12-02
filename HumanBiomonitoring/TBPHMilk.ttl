@@ -13,6 +13,8 @@
         """Mass concentration of tbph in breast milk""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q5> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q589446> .
 
@@ -24,6 +26,12 @@ _:b0
         <https://www.wikidata.org/wiki/Q19931407> ;
     iop:hasDenominator 
         <https://www.wikidata.org/wiki/Q22728> .
+
+<https://www.wikidata.org/wiki/Q5>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "person" .
 
 <https://www.wikidata.org/wiki/Q589446>
     a 
