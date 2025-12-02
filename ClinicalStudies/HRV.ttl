@@ -19,14 +19,15 @@
         """contractions; patient; variation; time interval; type: heart; interval: n+(n+1); ADD: patient""" ;
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/106" ;
+        iop:Variable ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q127006> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q181600> ;
     iop:hasStatisticalModifier 
-        _:b0 ;
+        <https://www.wikidata.org/entity/Q175199> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q189962> ;
+        <https://www.wikidata.org/entity/Q186081> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "type: heart" ;
@@ -41,7 +42,7 @@
     a 
         iop:Entity ;
     rdfs:label 
-        "contractions" .
+        "muscle contractions" .
 
 <https://www.wikidata.org/entity/Q181600>
     a 
@@ -49,13 +50,13 @@
     rdfs:label 
         "patient" .
 
-_:b0
+<https://www.wikidata.org/entity/Q175199>
     a 
         iop:StatisticalModifier ;
     rdfs:label 
-        "variation" .
+        "variance" .
 
-<https://www.wikidata.org/entity/Q189962>
+<https://www.wikidata.org/entity/Q186081>
     a 
         iop:Property ;
     rdfs:label 
