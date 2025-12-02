@@ -18,7 +18,7 @@
     rdfs:comment
         "blood; patient; rhesusform" ;
     ex:issue
-        https://github.com/mabablue/I-ADOPT-examples-playground/issues/118
+        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/118" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q7873> ;
     iop:hasMatrix 
