@@ -7,7 +7,7 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+
 
 ex:C20
     a 
@@ -17,7 +17,7 @@ ex:C20
     skos:definition 
         """Concentration of DDT in a given year at a site impacted by industry.""" ;
     rdfs:comment 
-        """DDT; due to: industry; soil; mass fraction; temporal extent: 1 year; ADD: ratio: mass per mass""" ;
+        """DDT; due to: industry; soil; mass fraction; temporal extent: 1 year""" ;
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP21.yaml> ;
     iop:pattern 
@@ -33,61 +33,55 @@ ex:C20
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q57951700> ;
+        <https://www.wikidata.org/entity/Q57951700> ;
     iop:hasStatisticalModifier 
-        <https://www.wikidata.org/wiki/Q19033> ;
+        <https://www.wikidata.org/entity/Q19033> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q899138> ;
+        <https://www.wikidata.org/entity/Q899138> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "due to: industry" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q163648> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "ratio: mass per mass" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q899138> ;
+             iop:constrains <https://www.wikidata.org/entity/Q163648> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "temporal extent: 1 year" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q19033> ;
+             iop:constrains <https://www.wikidata.org/entity/Q19033> ;
         ] .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "ratio" ;
     iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q163648> ;
+        <https://www.wikidata.org/entity/Q163648> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q36133> .
+        <https://www.wikidata.org/entity/Q36133> .
 
-<https://www.wikidata.org/wiki/Q57951700>
+<https://www.wikidata.org/entity/Q57951700>
     a 
         iop:Entity ;
     rdfs:label 
         "research site" .
 
-<https://www.wikidata.org/wiki/Q19033>
+<https://www.wikidata.org/entity/Q19033>
     a 
         iop:StatisticalModifier ;
     rdfs:label 
         "arithmetric mean" .
 
-<https://www.wikidata.org/wiki/Q899138>
+<https://www.wikidata.org/entity/Q899138>
     a 
         iop:Property ;
     rdfs:label 
         "mass fraction" .
 
-<https://www.wikidata.org/wiki/Q163648>
+<https://www.wikidata.org/entity/Q163648>
     a 
         iop:Entity ;
     rdfs:label 
         "DDT" .
 
-<https://www.wikidata.org/wiki/Q36133>
+<https://www.wikidata.org/entity/Q36133>
     a 
         iop:Entity ;
     rdfs:label 
