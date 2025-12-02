@@ -13,7 +13,7 @@
     skos:definition 
         """Labile detrital nitrogen concentration in the seabed in mmoleN/kg in sediment.""" ;
     rdfs:comment 
-        """Labile; detrital -> detrital organic material; nitrogen; concentration -> molar concentration; seabed; sediment; ADD: per unit mass; sea""" ;
+        """Labile; detrital -> detrital organic material; nitrogen; concentration -> molar concentration; seabed; sediment; sea""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/88" ;
     iop:hasObjectOfInterest 
         _:b0 ;
@@ -23,18 +23,24 @@
         <https://www.wikidata.org/entity/Q672821> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "location: seabed" ;
-             iop:constrains <https://www.wikidata.org/entity/Q180184> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "origin: detrital organic matter" ;
              iop:constrains <https://www.wikidata.org/entity/Q627> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "state: labile" ;
+             iop:constrains <https://www.wikidata.org/entity/Q627> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "location: seabed" ;
+             iop:constrains <https://www.wikidata.org/entity/Q180184> ;
         ] .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
+    rdfs:label 
+        "bc_0_b21_b0" ;
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q627> ;
     iop:hasDenominator 
