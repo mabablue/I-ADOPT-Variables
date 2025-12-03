@@ -23,6 +23,10 @@ ex:RadVelDirHF
         [ a iop:Constraint ;
              rdfs:label "datum: relative to True North" ;
              iop:constrains <https://www.wikidata.org/entity/Q2849635> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "sign meaning: positive degrees clockwise" ;
+             iop:constrains <https://www.wikidata.org/entity/Q2849635> ;
         ] .
 
 <http://example.org/iadopt/RDVA_variable>
