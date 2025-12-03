@@ -23,7 +23,7 @@ iop:hasObjectOfInterest
         <https://www.wikidata.org/entity/Q124274> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "interpretation: angle measured with the dip direction to the right" ;
+             rdfs:label "interpretation: angle measured with the dip direction to the right when facing in the azimuth direction" ;
              iop:constrains <https://www.wikidata.org/entity/Q124274> ;
         ] .
 
