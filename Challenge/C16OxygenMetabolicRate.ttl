@@ -3,8 +3,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:C16
     a 
@@ -13,7 +11,7 @@ ex:C16
         "Standard metabolic rate in mg of Oxygen per hour" ;
     skos:definition 
         """The measure of an ectotherm animal's baseline metabolic rate (i.e. non-active, non-stressed) measured by the milligrams of oxygen consumed in a period of time of one hour.""" ;
-    rdfs:comment "oxygen, from air to organism, MassFlowRate -> mass flow rate, due to: metabolism, air, organism, ectotherm -> type: ectotherm, non-stressed -> condition: non-stressed, non-active -> state: non-active, ADD: ratio: mass per time" ;
+    rdfs:comment "oxygen, from air to organism, MassFlowRate -> mass flow rate, condition: used in the metabolic process, air, organism, ectotherm -> type: ectotherm, non-stressed -> condition: non-stressed, non-active -> state: non-active, ADD: ratio: mass per time" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/22" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q5203615> ;
@@ -22,10 +20,6 @@ ex:C16
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q1366187> ;
     iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "ratio: mass per time" ;
-             iop:constrains <https://www.wikidata.org/entity/Q1366187> ;
-        ] ,
         [ a iop:Constraint ;
              rdfs:label "type: ectotherm" ;
              iop:constrains <https://www.wikidata.org/entity/Q7239> ;
@@ -39,7 +33,7 @@ ex:C16
              iop:constrains <https://www.wikidata.org/entity/Q7239> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "due to: metabolism" ;
+             rdfs:label "condition: used in the metabolic process" ;
              iop:constrains _:b0 ;
         ] .
 
@@ -55,10 +49,10 @@ _:b0
         iop:AsymmetricSystem ;
     rdfs:label 
         "flow" ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q7391292> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q7239> .
+        <https://www.wikidata.org/entity/Q7239> ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/entity/Q7391292> .
 
 <https://www.wikidata.org/entity/Q1366187>
     a 
@@ -66,14 +60,14 @@ _:b0
     rdfs:label 
         "mass flow rate" .
 
-<https://www.wikidata.org/entity/Q7391292>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "air" .
-
 <https://www.wikidata.org/entity/Q7239>
     a 
         iop:Entity ;
     rdfs:label 
         "organism" .
+
+<https://www.wikidata.org/entity/Q7391292>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "air" .
