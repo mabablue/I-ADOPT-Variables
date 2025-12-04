@@ -13,25 +13,26 @@
         iop:Variable ;
     rdfs:label 
         "Water sampling depth " ;
-    rdfs:comment 
-        """Water sampling depth (the distance from the top/surface to the bottom) from which the water was sampled""" ;
+    skos:definition "Water sampling depth (the distance from the top/surface to the bottom) from which the water was sampled";
+    rdfs:comment "datum: distance from the surface to the bottom, water sampling, depth";
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/120";
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q30032096> ;
+        <https://www.wikidata.org/entity/Q30032096> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q930412> ;
+        <https://www.wikidata.org/entity/Q930412> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "datum: distance from the surface to the bottom" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q930412> ;
+             iop:constrains <https://www.wikidata.org/entity/Q930412> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q30032096>
+<https://www.wikidata.org/entity/Q30032096>
     a 
         iop:Entity ;
     rdfs:label 
         "water sampling" .
 
-<https://www.wikidata.org/wiki/Q930412>
+<https://www.wikidata.org/entity/Q930412>
     a 
         iop:Property ;
     rdfs:label 
