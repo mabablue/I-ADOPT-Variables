@@ -4,9 +4,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/HFR> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+
 
 ex:Variable
     a 
@@ -15,7 +13,8 @@ ex:Variable
         "GDOP threshold quality flag " ;
     rdfs:comment 
         """QC flags resulting from setting a threshold on GDOP. Setting a threshold on GDOP for total combination avoids the combination of radials with an intersection angle below a certain value.""" ;
-    iop:hasObjectOfInterest 
+ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/50" ;  
+iop:hasObjectOfInterest 
         ex:OoI ;
     iop:hasProperty 
         ex:Prop ;
