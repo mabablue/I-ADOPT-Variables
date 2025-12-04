@@ -11,7 +11,7 @@
         "Percentage Branched Perfluorooctane sulfonic acid (BPFOS)" ;
     skos:definition "Percentage Branched Perfluorooctane sulfonic acid in blood";
     rdfs:comment "condition: branched isomers, blood, Perfluorooctane sulfonic acid, percentage, person" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/129"
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/129";
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
