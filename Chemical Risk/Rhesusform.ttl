@@ -12,9 +12,9 @@
     a 
         iop:Variable ;
     rdfs:label 
-        "Observation of bloodtype in blood" ;
+        "Observation of Rhesusform in blood" ;
     skos:definition
-        """Type of blood in a blood sample""" ;
+        """-Rhesusform in a blood sample""" ;
     rdfs:comment
         "blood; patient; rhesusform" ;
     ex:issue
