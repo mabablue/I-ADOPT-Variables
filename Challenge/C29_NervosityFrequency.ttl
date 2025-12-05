@@ -13,14 +13,13 @@ ex:C29
     skos:definition
         """In the past 30 days, how often did you feel nervous?""" ;
     rdfs:comment
-        """nervousness; patient; frequency; during last 30 days""" ;
-    iop:pattern 
+        """nervousness; person; frequency; during last 30 days""" ;
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/35" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q1978097> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q181600> ;
+        <https://www.wikidata.org/entity/Q5> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q11652> ;
     iop:hasConstraint 
@@ -35,11 +34,11 @@ ex:C29
     rdfs:label 
         "nervousness" .
 
-<https://www.wikidata.org/entity/Q181600>
+<https://www.wikidata.org/entity/Q5>
     a 
         iop:Entity ;
     rdfs:label 
-        "patient" .
+        "person" .
 
 <https://www.wikidata.org/entity/Q11652>
     a 
