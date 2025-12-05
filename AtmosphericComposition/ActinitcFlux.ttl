@@ -3,39 +3,62 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:ActinicFlux
     a 
         iop:Variable ;
     rdfs:label 
         "Upwelling actinic flux" ;
-    rdfs:comment 
+    skos:definition 
         """Upwelling component of actinic flux in wavelength range of 297-640 nm measured in photons/s/cm2/nm""" ;
+    rdfs:comment 
+        """Upwelling; actinic -> point; flux -> energy flux; wavelength range of 297-640 -> type: shortwave; ADD: atmosphere""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/103" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q7391292> ;
-    iop:hasProperty 
+        <https://www.wikidata.org/entity/Q18335> ;
+    iop:hasMatrix 
         _:b0 ;
+    iop:hasProperty 
+        <https://www.wikidata.org/entity/Q5377054> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "type: upwelling" ;
-             iop:constrains _:b0 ;
+             iop:constrains <https://www.wikidata.org/entity/Q18335> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: at 297-640 nm wavelength" ;
-             iop:constrains _:b0 ;
+             rdfs:label "type: shortwave (297-640 at nm wavelength)" ;
+             iop:constrains <https://www.wikidata.org/entity/Q18335> ;
         ] .
 
-<https://www.wikidata.org/entity/Q7391292>
+<https://www.wikidata.org/entity/Q18335>
     a 
         iop:Entity ;
     rdfs:label 
-        "air" .
+        "radiation" .
 
 _:b0
     a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    iop:hasSource 
+        <https://www.wikidata.org/entity/Q8104> ;
+    iop:hasTarget 
+        <https://www.wikidata.org/entity/Q44946> .
+
+<https://www.wikidata.org/entity/Q5377054>
+    a 
         iop:Property ;
     rdfs:label 
-        "actinic flux" .
+        "energy flux" .
+
+<https://www.wikidata.org/entity/Q8104>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "atmosphere" .
+
+<https://www.wikidata.org/entity/Q44946>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "point" .
