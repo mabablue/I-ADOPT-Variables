@@ -11,20 +11,28 @@
         iop:Variable ;
     rdfs:label 
         "Total Deplorizadion Ratio" ;
+    skos:definition 
+        """Total Deplorization Ratio: Ratio of backscattered light from the cross-polarized channel to the backscattered light from the parallet-polarized channel. Total is referring to the air as a whole.""" ;
     rdfs:comment 
-        """Ratio of backscattered light from the cross-polarized channel to the backscattered light from the parallet-polarized channel. Total is referring to the air as a whole.""" ;
+        """Deplorization Ratio; air; ADD: atmosphere.""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q7391292> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q2095> .
-  
+
 <https://www.wikidata.org/entity/Q7391292>
     a 
         iop:Entity ;
     rdfs:label 
         "air" .
 
-
+<https://www.wikidata.org/entity/Q8104>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "atmosphere" .
 
 <https://www.wikidata.org/entity/Q2095>
     a 
