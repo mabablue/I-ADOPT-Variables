@@ -30,8 +30,6 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "bc_0_b6_b0" ;
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q283> ;
     iop:hasDenominator 
