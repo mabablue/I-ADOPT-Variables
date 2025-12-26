@@ -28,8 +28,6 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "ratio" ;
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q776976> ;
     iop:hasDenominator 
