@@ -21,10 +21,6 @@ ex:FractionFloodedBuilding
         uom:AreaFraction ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "ratio: area per area" ;
-             iop:constrains uom:AreaFraction ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "condition: flooded above 30 cm" ;
              iop:constrains _:b1 ;
         ] ,
