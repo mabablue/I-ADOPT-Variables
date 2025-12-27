@@ -9,7 +9,7 @@
         iop:Variable ;
     rdfs:label 
         "Mean sea level pressure" ;
-    rdfs:comment 
+    skos:definition 
         """Mean sea level pressure expressed in Pa""" ;
    rdfs:comment 
 """pressure; location: mean sea level; ADD: atmosphere""" ; 
